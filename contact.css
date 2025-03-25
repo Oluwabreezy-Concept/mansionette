@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/*NAV BAR */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav h1{
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.links{
+    background-color: rgb(85, 144, 253);
+    padding: 0.2rem;
+    border: white solid 1px;
+    border-radius: 2rem;
+}
+.links ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.links li{
+    padding: 0.3rem;
+}
+
+.links a{
+    text-decoration: none;
+    color: rgb(250, 246, 246);
+    font-weight: 400;
+}
+
+.links a:hover{
+    color: rgb(4, 8, 48);
+    font-weight: 700;
+}
+
+.navContent h1{
+    margin-top: 12rem;
+    color: #fff;
+    font-size: 2.5rem;
+    padding-right: 4.8rem;
+    font-weight: 100;
+}
+
+.navContent p{
+    margin-top: 1rem;
+    color: #fff;
+    font-size: 1.1rem;
+    padding-right: 9.8rem;
+    font-weight: 100;
+}
+
+#icon{
+    display: none;
+    cursor: pointer;
+    
+}
+
+/* END OF NAV BAR */
+/* RESPONSIVE SIDE BAR*/
+.navContainer{
+    padding:0 0 3rem 0;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    background-color: #010816d5;
+    height: 100vh;
+    align-content: flex-start;
+    text-align: left;
+    box-shadow: 1px 10px 1px rgba(0, 0, 0, 0.89);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    padding-top: 2rem;
+    backdrop-filter: blur(10px);
+    display: none;
+    transform: 1s;
+}
+
+.navbar li{
+    list-style: none;
+    width: 100vw;
+    padding-top: 2rem;
+}
+
+.navbar a{
+    color: #e2e2e9;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0 2rem;
+    padding: 0.5rem;
+    width: 100vw;
+    cursor: pointer;
+
+}
+
+.navbar a:hover{
+    background-color: #838080;
+    color: #fff;
+    border-radius: 0.3rem;
+    width: 100vw;
+}
+
+.navbar span{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+
+#exitBar{
+    cursor: pointer;  
+    color: #fff;
+}
+#menuBtn{
+    cursor: pointer;  
+}
+
+/* END OF RESPONSIVE SIDE BAR*/
+
+.contactContainer{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 1.9)),url('images/duplex.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.contactHeadline{
+    text-align: center;
+    background-color: rgba(0, 0, 255, 0.158);
+    color: white;
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+}
+
+.contactHeadline p{
+    margin-top: 1.5rem;
+}
+
+.addressesContainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 2rem;
+}
+
+.contactWrap{
+    align-content: center;
+}
+
+#icon2{
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.3rem;
+    align-self: center;
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
+
+.location{
+    display: flex;
+}
+.phone{
+    display: flex;
+    margin-top: 2rem;
+}
+.email{
+    display: flex;
+    margin-top: 2rem;
+}
+.address{
+    color: #fff;
+}
+.address h1{
+    font-size: 1.5rem;
+}
+.call{
+    color: #fff;
+}
+.call h1{
+    font-size: 1.5rem;
+}
+.emailAddress{
+    color: #fff;
+}
+.emailAddress h1{
+    font-size: 1.5rem;
+}
+
+.form{
+    background-color: #fff;
+    padding: 3.5rem;
+    position: relative;
+}
+
+.form h1{
+    font-size: 1.5rem;
+}
+
+.form .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.form .inputBox input, textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid #000;
+    margin: 1rem 0;
+    resize: none;
+    outline: none;
+}
+
+.form .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 1.2rem 0;
+    font-size: 1rem;
+    pointer-events: none;
+}
+
+.form .inputBox input:focus~ span, .form .inputBox input:valid~ span{
+    color: blue;
+    font-size: 0.8rem;
+    transform: translateY(-25px);
+}
+
+.form .inputBox textarea:focus~ span, .form .inputBox textarea:valid~ span{
+    color: blue;
+    font-size: 0.8rem;
+    transform: translateY(-25px);
+}
+
+form .inputBox input[type="submit"]{
+    width: 100px;
+    background: blue;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/*FOOTER*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 15vh;
+    width: 100vw;
+    padding: 2rem;
+    position:static;
+    bottom: 0;
+    align-items: center;
+
+}
+.oluwabreezyLogo img{
+    height: 10vh;
+    width: 10vw;
+}
+
+.text{
+    display: flex;
+    color: white;
+    text-align: center;
+}
+.mediaHandles ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.mediaHandles ul li a img{
+    height: 5vh;
+    width: 2.8vw;
+}
+
+.mediaHandles ul li{
+    list-style: none;
+}
+
+#copyright{
+    margin-right:0.6rem;
+  }
+  
+/* END OF FOOTER*/
+
+
+
+
+/*MEDIA QUERY FOR CONTACT*/
+
+@media (max-width: 768px){
+    .address h1{
+        font-size: 1rem;
+    }
+    .address p{
+        font-size: 0.8rem;
+    }
+    .call h1{
+        font-size: 1rem;
+    }
+    .call p{
+        font-size: 0.8rem;
+    }
+    
+    .emailAddress h1{
+        font-size: 1rem;
+    }
+    .emailAddress p{
+        font-size: 0.8rem;
+    }
+
+    .form {
+        padding: 2.5rem;        
+    }
+    
+    .form h1{
+        font-size: 1.3rem;
+    }
+    
+    /*FOOTER*/
+    .oluwabreezyLogo img{
+        height: 8vh;
+        width: 8vw;
+    }
+    
+    .text h4{
+      font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 550px){
+    .addressesContainer{
+        display: block;
+    }
+    .addresses{
+        justify-items: center;
+    }
+    .location{
+        display: block;
+        justify-items: center;
+    }
+    .address{
+        text-align: center;
+        padding: 1rem;
+    }
+  
+    .phone{
+        display: block;
+        justify-items: center;
+    }
+    .call{
+        text-align: center;
+        padding: 1rem;
+    }
+    .email{
+        display: block;
+        justify-items: center;
+    }
+    .emailAddress{
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .form{
+        margin-top: 3rem;
+    }
+
+
+  /*NAV*/
+  .links{
+    display: none;
+  }
+
+  #icon{
+    display: block;
+  }
+  /*FOOTER*/
+  footer{
+    display: block;
+    height: fit-content;
+    justify-items: center;
+    align-content: space-between;
+    padding: 2rem;
+}
+  .text {
+    margin: 1.5rem;
+  }
+
+  .mediaHandles{
+    width: 10rem;
+  }   
+}

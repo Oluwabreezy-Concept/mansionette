@@ -1,0 +1,502 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-family: "Space Grotesk", sans-serif;
+}
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.9)), url('images/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 1.5rem;
+    height: fit-content; 
+}
+#icon{
+    display: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav h1{
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.links{
+    background-color: rgb(85, 144, 253);
+    padding: 0.2rem;
+    border: white solid 1px;
+    border-radius: 2rem;
+}
+.links ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.links li{
+    padding: 0.3rem;
+}
+
+.links a{
+    text-decoration: none;
+    color: rgb(250, 246, 246);
+    font-weight: 400;
+}
+
+.links a:hover{
+    color: rgb(4, 8, 48);
+    font-weight: 700;
+}
+
+.navContent h1{
+    margin-top: 12rem;
+    color: #fff;
+    font-size: 2.5rem;
+    padding-right: 4.8rem;
+    font-weight: 100;
+}
+
+.navContent p{
+    margin-top: 1rem;
+    color: #fff;
+    font-size: 1.1rem;
+    padding-right: 9.8rem;
+    font-weight: 100;
+}
+
+.ourLegacy{
+    padding: 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.legacyDetail p{
+    font-weight: 500;
+}
+
+.rating{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.rate{
+    padding: 0.7rem;
+}
+.rate h2{
+    font-size: 1.6rem;
+}
+.rate p{
+    font-size: 0.5rem;
+    justify-self: center;
+}
+.images{
+    display: grid;
+    grid-template-columns: 1fr repeat(4, 1fr) 1fr;
+    align-items: end;
+    margin-left: 3vw;
+    }
+
+.tall{
+    width: 23vw;
+    padding: 0.2rem;
+    height: 9rem;
+}
+.short{
+    width: 23vw;
+    padding: 0.2rem;
+    height: 7rem;
+}
+
+.ourStory{
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem 0;
+}
+
+.storyDetail p{
+    font-weight: 500;
+}
+
+.dpName{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 1rem 0;
+}
+
+.dpName img{
+    height: 2rem;
+    width: 2rem;
+    padding: 0.2rem;
+    border-radius: 5rem;
+    border: rgb(5, 5, 61) solid 1px;
+}
+
+.dpName p{
+    font-weight: 600;
+}
+.dpName h3{
+    font-weight: 100;
+    font-size: 0.8rem;
+    justify-self: center;
+}
+.comment{
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.team{
+    background-color: rgb(225, 231, 243);
+    padding: 1.5rem;
+    height: auto;
+}
+
+.headline{
+    text-align: center;
+}
+
+.headline h1{
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+.headline p{
+    font-size: 0.6rem;
+    margin: 0.5rem 8rem;
+}
+
+.teamRow{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.teamInfo{
+    background-color: rgb(245, 244, 244);
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.teamInfo h1{
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+
+.teamInfo h2{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.teamInfo p{
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: blue;
+    margin-bottom: 0.7rem;
+}
+
+hr{
+    height: 0.2rem;
+    background-color: black;
+    margin-bottom: 0.7rem;
+}
+.dp{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: rgb(5, 5, 61) solid 1px;
+    box-shadow: black;
+}
+
+.legacyIcon{
+    display: flex;
+    align-content: end;
+}
+.storyIcon{
+    display: flex;
+    align-content: end;
+}
+
+#icon2{
+    color: #000;
+    margin-left: 0.1rem;
+    margin-top: 0.5rem;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    background-color: #ffffff2f;
+    height: 100vh;
+    align-content: flex-start;
+    text-align: flex-start;
+    box-shadow: 1px 10px 1px rgba(0,0,0,0.1);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 2rem;
+    backdrop-filter: blur(10px);
+    display: none;
+    transform: 1s;
+}
+
+.navbar li{
+    list-style: none;
+    width: 100vw;
+    padding-top: 2rem;
+}
+
+.navbar a{
+    color: #05042c;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0 2rem;
+    padding: 0.5rem;
+    width: 100vw;
+    cursor: pointer;
+
+}
+
+.navbar a:hover{
+    background-color: #838080;
+    color: #fff;
+    border-radius: 0.3rem;
+    width: 100vw;
+}
+
+.navbar span{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+
+#exitBar{
+    cursor: pointer;  
+}
+#menuBtn{
+    cursor: pointer;  
+}
+
+
+
+/*MEDIA QUERY FOR ABOUT PAGE*/
+@media(max-width: 738px){
+    .links a{
+        font-size: 0.7rem;
+    }
+    .navContent h1{
+        font-size: 1.9rem;
+    }
+    .navContent p{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 650px){
+    .ourLegacy{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .legacyIcon h1{
+        justify-self: center;
+    }
+    .legacyDetail p{
+        margin-top: 2rem;
+    }
+
+    .rate h2{
+        justify-self: center;
+    }
+    .rate p{
+        justify-self: center;
+        margin: 0.5rem;
+    }
+
+    .ourStory{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ourStory p{
+        margin: 2rem 2rem 0 2rem;
+    }
+    
+    .storyIcon h1{
+        margin-top: 1rem;
+        justify-self: center;
+    }
+
+    .dpName{
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+    }
+    .dpName p{
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .comment{
+        text-align: center;
+        padding: 0 3rem;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 550px){
+    .links a{
+        font-size: 0.5rem;
+    }
+
+    .navContent h1{
+        font-size: 1.4rem;
+    }
+    .navContent p{
+        font-size: 0.5rem;
+    }
+
+    .teamRow{
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+        width: 40vw;
+        height: fit-content;
+        justify-self: center;
+    }
+    .teamInfo{
+        margin-bottom: 1rem;
+    }
+
+    .headline h1{
+        font-size: 1.5rem;
+    }
+
+    .rate p{
+        font-size: 0.4rem;
+    }
+
+    .headline p{
+        margin: 2rem 0.9rem;
+
+    }
+
+}
+
+@media(max-width:425px){
+    .links{
+        display: none;
+    }
+    #icon{
+        display: block;
+        color: #fff;
+    }
+
+    nav h1{
+        font-size: 1.3rem;
+    }
+
+    .navContent h1{
+        font-size: 1rem;
+    }
+ 
+    .navContent p{
+        font-size: 0.5rem;
+    }
+
+    .legacyIcon h1{
+        font-size: 1rem;
+    }
+    .storyIcon h1{
+        font-size: 1rem;
+    }
+
+    .images{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images img{
+        width: 50vw;
+    }
+
+    .legacyDetail p{
+        font-size: 0.9rem;
+    }
+    .storyDetail p{
+        font-size: 0.9rem;
+    }
+
+    .dpNmame{
+        margin: 0;
+    }
+
+    .comment p{
+        font-size: 0.5rem;
+        margin: 0;
+
+    }
+
+    .rate{
+        padding-left: 0;
+    }
+
+    .rate p{
+        font-size: 0.4rem;
+        font-weight: 600;
+        margin: 0;
+    }
+    .rate h2{
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .headline h1{
+        font-size: 1rem;
+    }
+    .headline p{
+        margin: 2rem 0.9rem;
+
+    }
+}
+
+@media (max-width: 350px){
+    nav h1{
+        font-size: 1rem;
+    }
+
+    .navContent{
+        padding: 0;
+    }
+    .navContent h1{
+        font-size: 0.8rem;
+    }
+    
+    .navContent p{
+        font-size: 0.19rem;
+        line-height: 0.6rem;
+   }
+
+   .rate p{
+    font-size: 0.4rem;
+    font-weight: 600;
+    margin: 0;
+}
+.rate h2{
+    font-size: 1rem;
+    font-weight: 600;
+}
+}

@@ -1,0 +1,648 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-family: "Space Grotesk", sans-serif;
+}
+/* SERVICES*/
+.services{
+    background-color: whitesmoke;
+    background-image: radial-gradient(rgb(24, 24, 92), rgb(221, 208, 208));
+    height: 100vh;
+}
+  
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+  }
+
+  .navbar h1{
+    font-size: 1.7rem;
+    color: #fff;
+  }
+
+  #icon{
+    color: #fff;
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+  .sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    background-color: #ffffff2f;
+    height: 100vh;
+    box-shadow: 1px 10px 1px rgba(0,0,0,0.1);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    backdrop-filter: blur(10px);
+    display: none;
+    transform: 1s;
+}
+
+.sidebar li{
+    list-style: none;
+    /* width: 100vw; */
+    padding: 1.9rem 2rem;
+}
+
+.sidebar a{
+    color: #05042c;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0 2rem;
+    padding: 0.5rem 70vw 0.5rem 0.6rem;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.sidebar a:hover{
+    background-color: #0000001e;
+    color: #fff;
+    border-radius: 0.3rem;
+}
+
+.sidebar span{
+    /* margin-bottom: 4rem; */
+    font-size: 1.5rem;
+}
+
+#exitBar{
+    cursor: pointer;  
+    padding-left: 2.5rem;
+    font-size: 2.5rem;
+}
+
+.exitBarCon{
+    margin-bottom: 4rem;
+}
+#menuBtn{
+    cursor: pointer;  
+}
+  .nav{
+    background-color: rgb(73, 73, 177);
+    padding: 0.2rem;
+    border: white solid 1px;
+    border-radius: 2rem;
+  }
+  .nav ul{
+    display: flex;
+  }
+
+  .nav li{
+    list-style: none;
+    margin: 0.2rem;
+}
+  .nav a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.3rem;
+ }
+  .nav a:hover{
+    color: #0e0f38;
+ }
+
+  .servicesContainer{
+    background-color: #fff;
+    height: 50vh;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 0.3rem;
+  }
+  
+  .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  #next{
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .btnContainer{
+    background-color: rgb(73, 73, 177);
+    border-radius: 1.5rem;
+    padding: 0.6rem;
+    display: flex;
+  }
+  
+  .btnContainer a{
+    font-size: 0.7rem;
+    text-decoration: none;
+    margin-top: 0.4rem;
+    color: black;
+    font-weight: 1000;
+    padding-left: 0.3rem;
+  }
+  
+  .catalogue{
+    padding: 0.9rem;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    min-height: fit-content;
+    height: 12rem;
+    width: 20vw;
+    font-size: 0.6rem;
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    }
+  
+    .catalogue:hover{
+    transform: scale(1.2);
+    }
+     #commercial{
+    cursor: pointer;
+    }
+  
+    .catalogueContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+  
+    .catalogue h1 {
+    font-size: 0.7rem;
+    margin-top: 1rem;
+    }
+    .catalogue p {
+    font-size: 0.6rem;
+    margin-top: 0.3rem;
+    }
+    .catalogueLink{
+    border: none;
+    padding: 1rem;
+    font-size: 0.6rem;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+  }
+  .catalogueLink:hover{
+    color: blue;
+  }
+  .catalogue2{
+    padding: 0.9rem;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    min-height: fit-content;
+    height: 12rem;
+    width: 20vw;
+    font-size: 0.6rem;
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: 1s linear;
+    }
+  
+    #residential{
+      cursor: pointer;
+    }
+  
+  .catalogue2:hover{
+      transform: scale(1.2);
+    }
+  
+  .catalogue2 h1 {
+    font-size: 0.7rem;
+    margin-top: 1.6rem;
+  }
+  .catalogue2 p {
+    font-size: 0.6rem;
+    margin-top: 0.3rem;
+  }
+  .catalogue3{
+    padding: 0.9rem;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    min-height: fit-content;
+    height: 12rem;
+    width: 20vw;
+    font-size: 0.6rem;
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    }
+  
+    .catalogue3:hover{
+      transform: scale(1.2);
+    }
+  
+    #estate{
+      cursor: pointer;
+    }
+  
+  .catalogue3 h1 {
+    font-size: 0.7rem;
+    margin-top: 1.6rem;
+  }
+  .catalogue3 p {
+    font-size: 0.6rem;
+    margin-top: 0.3rem;
+  }
+  
+  .catalogue4{
+    padding: 0.9rem;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    min-height: fit-content;
+    height: 12rem;
+    width: 20vw;
+    font-size: 0.6rem;
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    }
+  
+  .catalogue4:hover{
+      transform: scale(1.2);
+    }
+  
+    #investment{
+      cursor: pointer;
+    }
+  
+  .catalogue4 h1 {
+    font-size: 0.7rem;
+    margin-top: 1.6rem;
+  }
+  .catalogue4 p {
+    font-size: 0.6rem;
+    margin-top: 0.3rem;
+  }
+  
+  
+  
+  
+  
+  /*MEDIA QUERY FOR SERVICE*/
+  @media (max-width: 970px){
+    .nav{
+        display: none;
+    }
+
+    #icon{
+        display: block;
+        margin-right: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .services{
+      height: fit-content;
+    }
+    .servicesContainer{
+      height: fit-content;
+  }
+    .catalogueContainer{
+      /* padding-left: 5.5rem; */
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+    .catalogue{
+      width: 90%;
+      height: 10rem;
+    }
+    .catalogue2{
+      width: 90%;
+      height: 10rem;
+    }
+    .catalogue3{
+      margin-top: 0.4rem;
+      width: 90%;
+      height: 10rem;
+    }
+    .catalogue4{
+      width: 90%;
+      height: 10rem;
+    }
+
+
+  }
+  
+  
+  @media (max-width: 480px){
+    .catalogueContainer{
+      /* padding-left: 5.5rem; */
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+    }
+    
+    .catalogue{
+      margin-top: 2rem;
+    }
+    .catalogue2{
+      margin-top: 2rem;
+    }
+    .catalogue3{
+      margin-top: 2rem;
+    }
+    .catalogue4{
+      margin-top: 2rem;
+    }
+    
+    .btnContainer a{
+      font-size: 0.4rem;
+    }
+    .btnContainer span{
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width:400px){
+    .btnContainer a{
+      display: none;
+    }
+    .btnContainer span{
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width:320px){
+    .top h1{
+      font-size: 1rem
+    }
+  }
+  
+
+
+
+
+
+.serviceWrapper{
+    background-color: rgb(250, 248, 246);
+    padding: 3rem;
+    height: fit-content;
+}
+
+.apartment{
+    display: grid;
+    grid-template-columns: 16rem 10rem 10rem 10rem 10rem;
+    font-size: 0.7rem;
+    padding: 2rem 0;
+}
+
+.apartment:hover{
+    background-color: rgb(73, 73, 177);
+    border-radius: 0.6rem;
+    padding-left: 1rem;
+    width: fit-content;
+}
+
+.studio{
+    display: grid;
+    grid-template-columns: 16rem 10rem 10rem 10rem 10rem;
+    font-size: 0.7rem;
+    padding: 2rem 0;
+    
+}
+
+.studio:hover{
+    background-color: rgb(73, 73, 177);
+    border-radius: 0.6rem;
+    padding-left: 1rem;
+    width: fit-content;
+}
+.duplex{
+    display: grid;
+    grid-template-columns: 16rem 10rem 10rem 10rem 10rem;
+    font-size: 0.7rem;
+    padding: 2rem 0;
+}
+
+.duplex:hover{
+    background-color: rgb(73, 73, 177);
+    border-radius: 0.6rem;
+    padding-left: 1rem;
+    width: fit-content;
+}
+.penthhouse{
+    display: grid;
+    grid-template-columns: 16rem 10rem 10rem 10rem 10rem;
+    font-size: 0.7rem;
+    padding: 2rem 0;
+}
+
+.penthhouse:hover{
+    background-color: rgb(73, 73, 177);
+    border-radius: 0.6rem;
+    padding-left: 1rem;
+    width: fit-content;
+}
+.libraries{
+    display: grid;
+    grid-template-columns: 16rem 10rem 10rem 10rem 10rem;
+    font-size: 0.7rem;
+    padding: 2rem 0;
+}
+
+.libraries:hover{
+    background-color: rgb(73, 73, 177);
+    border-radius: 0.6rem;
+    padding-left: 1rem;
+    width: fit-content;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+}
+.details span{
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+
+.serviceWrapper2{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    padding: 5rem 2rem;
+    display: none;
+}
+.apartmentCon2{
+    padding: 1rem 0 1rem 1rem;
+}
+.studioCon2{
+    padding: 1rem 0 1rem 1rem;
+}
+.duplexCon2{
+    padding: 1rem 0 1rem 1rem;
+}
+.penthhouseCon2{
+    padding: 1rem 0 1rem 1rem;
+}
+.librariesCon2{
+    padding: 1rem 0 1rem 1rem;
+}
+
+.serviceWrapper2 h1{
+    font-size: 1.5rem;
+}
+
+.serviceWrapper2 h2{
+    font-size: 0.9rem;
+
+}
+.apartmentCon2:hover{
+    background-color: rgb(73, 73, 177);
+    border-radius: 0.6rem;
+    /* padding: 1rem; */
+    width: 190px;
+}
+.studioCon2:hover{
+    background-color: rgb(73, 73, 177);
+    border-radius: 0.6rem;
+    padding: 1rem;
+    width: fit-content;
+}
+.duplexCon2:hover{
+    background-color: rgb(73, 73, 177);
+    border-radius: 0.6rem;
+    padding: 1rem;
+    width: fit-content;
+}
+.penthhouseCon2:hover{
+    background-color: rgb(73, 73, 177);
+    border-radius: 0.6rem;
+    padding: 1rem;
+    width: fit-content;
+}
+.librariesCon2:hover{
+    background-color: rgb(73, 73, 177);
+    border-radius: 0.6rem;
+    padding: 1rem;
+    width: fit-content;
+}
+
+.bed2{
+    padding-bottom: 0.6rem;
+}
+.bath2{
+    padding-bottom: 0.6rem;
+}
+.sqft2{
+    padding-bottom: 0.6rem;
+}
+.price2{
+    padding-bottom: 0.6rem;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 15vh;
+    width: 100vw;
+    padding: 2rem;
+    position:static;
+    bottom: 0;
+    align-items: center;
+
+}
+.oluwabreezyLogo img{
+    height: 10vh;
+    width: 10vw;
+}
+
+.text{
+    display: flex;
+    color: white;
+    text-align: center;
+}
+.mediaHandles ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.mediaHandles ul li a img{
+    height: 5vh;
+    width: 2.8vw;
+}
+
+.mediaHandles ul li{
+    list-style: none;
+}
+
+#copyright{
+  margin-right: 1rem;
+}
+
+/*MEDIA QUERY FOR APARTMENT SECTION*/
+
+@media (max-width: 970px){
+ 
+  .oluwabreezyLogo img{
+    height: 8vh;
+    width: 8vw;
+}
+
+.text h4{
+  font-size: 0.8rem;
+}
+    .serviceWrapper{
+    display: none ;
+ }   
+    .serviceWrapper2{
+    display: grid ;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+ }
+ 
+ .apartmentCon2{
+    justify-content: center;
+ }
+}
+
+@media (max-width: 735px){
+    .serviceWrapper2{
+        display: grid ;
+        grid-template-columns: 200px 200px;
+        justify-content: center;
+     }
+}
+@media (max-width: 720px){
+    footer{
+      display: block;
+      height: fit-content;
+      justify-items: center;
+      align-content: space-between;
+      padding: 2rem;
+}
+    .text {
+      margin: 1.5rem;
+    }
+
+    .mediaHandles{
+      width: 10rem;
+    }
+}
+@media (max-width: 500px){
+    .serviceWrapper2{
+        display: block;
+        justify-items: center;
+     }
+}

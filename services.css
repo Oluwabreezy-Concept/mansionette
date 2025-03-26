@@ -645,4 +645,7 @@ footer{
         display: block;
         justify-items: center;
      }
+      .mediaHandles ul li a img{
+        width: 1.9rem;
+      }
 }

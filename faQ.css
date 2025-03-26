@@ -299,4 +299,7 @@ footer{
       .mediaHandles{
         width: 10rem;
       }
+      .mediaHandles ul li a img{
+        width: 1.9rem;
+      }
 }
